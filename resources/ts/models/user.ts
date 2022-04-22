@@ -1,5 +1,8 @@
 import axios from 'axios'
 import { ParseDate } from '@/helpers/dates'
+// @ts-ignore
+// todo: trazer o helper ASAP
+import { formatNumber } from '@js/helpers'
 
 export type Status = 'active' | 'inactive' | 'pending' | 'deleted' | undefined
 export type Icon = 'success' | 'warning'
@@ -30,7 +33,9 @@ export const user: User = {
     update() {
         const date: Date = ParseDate('01/01/2022')
 
-        console.log(date)
+        const number: String = formatNumber(123456)
+
+        console.log(date, number)
 
         return this
     },

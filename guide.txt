@@ -1,0 +1,32 @@
+- O que é o javascript?
+    - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
+    - https://www.javascript.com/
+- O que é o typescript?
+    - https://www.typescriptlang.org/
+    - types
+    - interfaces
+    - classes
+    - functions
+
+
+
+- Instalação em projeto laravel
+    - install: npm install typescript --save-dev
+    - init: npx tsc --init
+    - adicionar o typescript junto ao laravel mix: https://laravel-mix.com/docs/6.0/mixjs#typescript-support
+        - npm install ts-loader --save-dev --legacy-peer-deps
+    - alpine components com typescript
+    - alias para importar modules
+        - https://laravel-mix.com/docs/6.0/aliases
+    - tests
+        - https://mochajs.org/
+        - https://dev.to/matteobruni/mocha-chai-with-typescript-37f
+
+
+
+- add link to ts pattern
+
+
+Erros Comuns:
+- Typescript ReferenceError: exports is not defined
+    https://stackoverflow.com/a/58680432

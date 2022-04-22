@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { ParseDate } from '@/helpers/dates'
 
 export type Status = 'active' | 'inactive' | 'pending' | 'deleted' | undefined
 export type Icon = 'success' | 'warning'
@@ -26,7 +27,13 @@ export const user: User = {
     age: 22,
     status: undefined,
     create() { return this },
-    update() { return this },
+    update() {
+        const date: Date = ParseDate('01/01/2022')
+
+        console.log(date)
+
+        return this
+    },
 }
 
 // user.status = 'closed'
